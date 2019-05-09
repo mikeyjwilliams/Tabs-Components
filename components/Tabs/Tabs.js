@@ -61,6 +61,5 @@ class TabItem {
 
 const links = document.querySelectorAll('.tabs-links');
 links.forEach(tab => {
-  console.log(tab);
   return new TabLink(tab);
 })
