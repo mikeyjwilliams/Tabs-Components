@@ -29,7 +29,7 @@ class TabLink {
     // Add a class named "tabs-link-selected" to this link
     this.element.classList.add('tabs-link-selected');
     // Call the select method on the item associated with this link
-
+    this.tabItem.select();
   }
 }
 
@@ -44,9 +44,9 @@ class TabItem {
     const items = document.querySelectorAll('.tabs-item');
     console.log(items);
     // Remove the class "tabs-item-selected" from each element
-    // items.forEach(tab => {
-    //   tab.classList.remove('tabs-item-selected');
-    // });
+    items.forEach(tab => {
+      tab.classList.remove('tabs-item-selected');
+    });
     // Add a class named "tabs-item-selected" to this element
     this.element.classList.add('tabs-item-selected');
   }
